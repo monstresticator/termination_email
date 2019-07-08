@@ -1,0 +1,43 @@
+body {
+ background-color: #284B63;
+}
+
+#form_elements {
+ margin: 10% auto;
+ width: 473.75px;
+}
+
+h1 {
+ text-align: center;
+ font-size: 2em;
+ color: #B4B8AB;
+}
+
+.fields {
+ margin-left: 2px;
+ height: 30px;
+ width: 46%;
+ padding-left: 10px;
+}
+
+button {
+ height: 35px;
+ width: 471.75px;
+ cursor: pointer;
+ text-decoration: none;
+ border: none;
+ color: #284B63;
+ background-color: #B4B8AB;
+ font-weight: bold;
+ font-size: 1em;
+}
+
+button:hover {
+ color: #fff;
+ background-color: #79C546;
+}
+
+footer>p {
+  text-align: center;
+  color: #B4B8AB;
+}
