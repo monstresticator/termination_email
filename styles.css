@@ -1,40 +1,79 @@
 body {
- background-color: #284B63;
+  background-color: #284B63;
 }
 
-#form_elements {
- margin: 10% auto;
- width: 473.75px;
+#term_form {
+  margin: 5% auto;
+  padding-left: 2px;
+  width: 495px;
 }
 
 h1 {
- text-align: center;
- font-size: 2em;
- color: #B4B8AB;
+  margin-bottom: 10%;
+  text-align: center;
+  font-size: 2.2em;
+  color: #B4B8AB;
 }
 
 .fields {
- margin-left: 2px;
- height: 30px;
- width: 46%;
- padding-left: 10px;
+  margin-bottom: 7px;
+  height: 30px;
+  width: 230px;
+  padding-left: 5px;
+  border-radius: 5px;
 }
 
-button {
- height: 35px;
- width: 471.75px;
- cursor: pointer;
- text-decoration: none;
- border: none;
- color: #284B63;
- background-color: #B4B8AB;
- font-weight: bold;
- font-size: 1em;
+.assets {
+  margin-right: 5px;
+  margin-bottom: 7px;  
 }
 
-button:hover {
- color: #fff;
- background-color: #79C546;
+.description {
+  margin-bottom: 5px;	
+}
+
+.assets, .description {
+  height: 30px;
+  width: 230px; 
+  padding-left: 5px;
+  border-radius: 5px;
+}
+
+#btnsend {
+  height: 35px;
+  width: 482px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  color: #284B63;
+  background-color: #B4B8AB;
+  font-weight: bold;
+  font-size: 1em;
+  border-radius: 5px;
+} 
+
+#btnaddasset, #btnremasset {
+  margin: 7px 0 7px;
+  width: 239px;
+  height: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  color: #284B63;
+  background-color: #B4B8AB;
+  font-weight: bold;
+  font-size: .87em;
+  border-radius: 5px;
+}
+
+#btnsend:hover, #btnaddasset:hover {
+  color: #fff;
+  background-color: #79C546;
+}
+
+#btnremasset:hover {
+  color: #fff;
+  background-color: #E10516;
 }
 
 footer>p {
