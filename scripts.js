@@ -25,10 +25,11 @@ function addAsset() {
 }
 
 function removeAsset(){
+  var parent = document.getElementById("assets_container");
   var child1 = document.getElementById("add_asset");
   var child2 = document.getElementById("add_desc");
-  child1.parentNode.removeChild(child1);
-  child2.parentNode.removeChild(child2);
+  parent.removeChild(child1).lastChild;
+  parent.removeChild(child2).lastChild;
 } 
 
 function resetAssets() {
@@ -50,10 +51,10 @@ function sendEmail() {
   var mgr = document.getElementById("manager").value;
   var mgr_email = document.getElementById("mgr_email").value;
   var clear = document.getElementById("term_form");
-  var email_msg = "";
+  var email_msg = "mailto:";
   
-  // Display message
-  email_msg ="mailto:" + mgr_email + "?subject=Termination assets for " + fName + " " + lName + "&body=Hello " + mgr + ",%0D%0A %0D%0AWe have received notice that " + fName + " " + lName + " has been terminated. Please deliver all assets for " + fName + " " + lName + " to " + loc + ". Until the equipment has been received, these devices are currently assigned to you, as the manager, for accountability purposes.";
+  // Display default message
+  email_msg += mgr_email + "?subject=Termination assets for " + fName + " " + lName + "&body=Hello " + mgr + ",%0D%0A %0D%0AWe have received notice that " + fName + " " + lName + " has been terminated. Please deliver all assets for " + fName + " " + lName + " to " + loc + ". Until the equipment has been received, these devices are currently assigned to you, as the manager, for accountability purposes.";
   
   // Display assigned devices
   email_msg += "%0D%0AAssigned devices%0D%0A %0D%0A";
