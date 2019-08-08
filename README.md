@@ -1,4 +1,4 @@
-# termination_email
+# Termination Email 
 
 This is a simple form used to send managers a prewritten email message about users who have been terminated.
 
