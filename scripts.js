@@ -54,7 +54,7 @@ function sendEmail() {
   var email_msg = "mailto:";
   
   // Display default message
-  email_msg += mgr_email + "?subject=Termination assets for " + fName + " " + lName + "&body=Hello " + mgr + ",%0D%0A %0D%0AWe have received notice that " + fName + " " + lName + " has been terminated. Please deliver all assets for " + fName + " " + lName + " to " + loc + ". Until the equipment has been received, these devices are currently assigned to you, as the manager, for accountability purposes.";
+  email_msg += mgr_email + "?subject=Termination notice for " + fName + " " + lName + "&body=Hello " + mgr + ",%0D%0A %0D%0AWe have received notice that " + fName + " " + lName + " has been terminated. Please deliver all assets for " + fName + " " + lName + " to " + loc + ". Until the equipment has been received, these devices are currently assigned to you, as the manager, for accountability purposes.";
   
   // Display assigned devices
   email_msg += "%0D%0AAssigned devices%0D%0A %0D%0A";
